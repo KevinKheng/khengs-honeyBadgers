@@ -41,9 +41,13 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
 var count = 0;
+var last , diff;
 $("#btnAjaxCall").click(function(){
 	fetchDataAndDisplay();
 });
+$("div")window.setInterval(function(){
+   fetchDataAndDisplay(); 
+}, 300000);
 var links = ["https://softwareengineeringgabe.azurewebsites.net/my-information.json","https://softwareengineeringgabe.azurewebsites.net/kevin.json","https://softwareengineeringgabe.azurewebsites.net/juan.json","https://softwareengineeringgabe.azurewebsites.net/alex.json", "https://softwareengineeringgabe.azurewebsites.net/louie.json"];
 function fetchDataAndDisplay(){
 	$(".display-data").empty();
@@ -69,5 +73,6 @@ function fetchDataAndDisplay(){
 	});
 	}
 }
+
 </script>
 </html>
