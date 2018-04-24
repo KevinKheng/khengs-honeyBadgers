@@ -1,0 +1,79 @@
+<DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>$1324.53 Was Deposited To Your Bank Account</title>
+        <style type="text/css">
+            input { text-align:right; }
+        </style>
+        <script src="yahtzee-dice-roller-extern-js.js"></script>
+    </head>
+    <body onload="random()">
+    	<center>
+        <button type="button" autofocus onclick="random()">Roll Yahtzee Dice</button><br><br>
+        <table>
+            <tr>
+                <th>Dice</th>
+                <th>Values</th> 
+            </tr>
+            <tr>
+                <td>Dice 1:</td>
+                <td> 
+                    <input id="dice-1" type="text" value="" size="5" disabled>
+                </td>
+            </tr>
+            <tr>
+                <td>Dice 2:</td>
+                <td>
+                    <input id="dice-2" type="text" value="" size="5" disabled>
+                </td>
+                </tr>
+            <tr>
+                <td>Dice 3:</td>
+                <td>
+                    <input id="dice-3" type="text" value="" size="5" disabled>
+                </td>
+            </tr>
+            <tr>
+                <td>Dice 4:</td>
+                <td>
+                    <input id="dice-4" type="text" value="" size="5" disabled>
+                </td>
+            </tr>
+            <tr>
+                <td>Dice 5:</td>
+                <td>
+                    <input id="dice-5" type="text" value="" size="5" disabled>
+                </td>
+            </tr>
+			<tr>
+				<td>Dice 6:</td>
+				<td>
+					<input id="dice-6" type="text" value="" size="6" disabled>
+				</td>
+			</tr>
+			<tr>
+				<td>Dice 7:</td>
+				<td>
+					<input id="dice-7" type="text" value="" size="7" disabled>
+				</td>
+			</tr>
+        </table>
+    	</center>
+	<script>
+		function getRandomInteger(min, max) {
+			return Math.floor(Math.random() * (max - min + 1) ) + min;
+		}
+		function random() {
+			document.getElementById("dice-1").value = getRandomInteger(1, 12);   
+			document.getElementById("dice-2").value = getRandomInteger(1, 12);
+			document.getElementById("dice-3").value = getRandomInteger(1, 12);   
+			document.getElementById("dice-4").value = getRandomInteger(1, 12);
+			document.getElementById("dice-5").value = getRandomInteger(1, 12);  
+			document.getElementById("dice-6").value = getRandomInteger(1, 12);
+			document.getElementById("dice-7").value = getRandomInteger(1, 12);
+		}
+	</script>	
+    
+	</body>
+</html>
