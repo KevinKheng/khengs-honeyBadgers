@@ -1,0 +1,8 @@
+{
+        "FirstName": "Kevin",
+        "LastName": "Kheng",
+        "PreferredName": "Kevin",
+        "TeamName": "Honey Badgers",
+        "SeatLocation": "10-1",
+        "Roles": ["Product Owner", "Developer"]
+    }
