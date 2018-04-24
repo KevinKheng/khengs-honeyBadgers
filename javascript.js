@@ -1,4 +1,3 @@
-<script>
 var count = 0;
 $("#btnAjaxCall").click(function(){
 	fetchDataAndDisplay();
@@ -35,4 +34,3 @@ function fetchDataAndDisplay(){
 	});
 	}
 }
-</script>
